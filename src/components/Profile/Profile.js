@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import './Profile.css'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 import { Link } from 'react-router-dom';
 import Data from '../data/Data';
 import Chat from '../Chat/Chat';
@@ -64,14 +64,14 @@ function Profile() {
                     <h2><span>City : </span>{selectedUser.address.city}</h2>
                     <h2><span>Zipcode : </span>{selectedUser.address.zipcode}</h2>
                     <div className='map-wrap'>
-                    <MapContainer className='map-contain' center={[location.latitude, location.longitude]} zoom={13} >
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" maxZoom={900} />
-      <Marker position={[location.latitude, location.longitude]}>
-        <Popup>
-          Pavan lives here, meet him & strive for <strong>Greater Collective Enlightment </strong> :)
-        </Popup>
-      </Marker>
-    </MapContainer>
+                    <iframe
+          width="100%"
+          height="350"
+         
+          src={`https://maps.google.com/maps?q=${location.latitude},${location.longitude}&hl=es;&output=embed`}
+          
+        ></iframe>
+
                     </div>
                     <div className='latlng'>
                       <h3><span>Lat : </span>{selectedUser.address.geo.lat}</h3>
