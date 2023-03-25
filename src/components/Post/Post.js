@@ -9,7 +9,7 @@ function Post() {
   return (
     <div className='post'>
        <div className='header'>
-            <h1 onClick={()=>setShowPopUp(false)}>Profile</h1>
+            <h1 onClick={()=>setShowPopUp(false)}>Post</h1>
             <div className='info-1' onClick={()=>setShowPopUp(true)}>
             <img src={selectedUser.profilepicture} alt="profile pic and name of the user"  />
             <p>{selectedUser.name}</p>

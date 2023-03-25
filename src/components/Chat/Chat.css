@@ -7,8 +7,8 @@
    border: 2px solid #3b64c1;
    border-radius: 10px;
    position: absolute;
-   bottom: -100px;
-   right: 100px;
+   bottom: -200px;
+   right: 50px;
 }
 
 .info-chat li {
@@ -33,15 +33,7 @@
       font-size: 18px;
   }
   
-  /* .info-section> .info > li{
-      display: flex;
-      text-align: center;
-      background-color: #ffffff;
-      border-bottom: 2px solid #f6f6f6;
-     
-      
-     
-  }  */
+ 
   .scroll-div-chat{
     height: 500px;
     overflow-y: scroll;
@@ -95,3 +87,66 @@
     font-size: 25px;
 }
 
+.cont{
+  display: flex;
+  justify-content: space-between;
+}
+.actived{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 30px;
+  border: none;
+  background-color: green;
+}
+
+.chatting{
+  position: absolute;
+  right: 400px;
+  bottom: -220px;
+  border: 2px solid #3b64c1;
+  border-radius: 10px;
+ 
+}
+.selected-profile-pic{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.chat-header{
+  display: flex;
+  width: 200px;
+  background-color: #3b64c1;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+.headd{
+  display: flex;
+}
+
+.chat-header>.headd >p{
+  font-size: 12px;
+  
+}
+
+.ch-list{
+  height: 100px;
+  background-color: antiquewhite;
+}
+
+.msg-input >input{
+  border: none;
+
+  margin: 5px;
+}
+.sender-i{
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+    .chat-comp{
+      bottom: -200px;
+    }
+}
