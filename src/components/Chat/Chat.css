@@ -126,6 +126,11 @@
   display: flex;
 }
 
+.headd > p{
+  color: #f6f6f6;
+  padding-left: 10px;
+}
+
 .chat-header>.headd >p{
   font-size: 12px;
   
@@ -143,6 +148,8 @@
 }
 .sender-i{
   margin-left: 20px;
+   font-weight: 900;
+  color: #3b64c1;
 }
 
 @media screen and (max-width: 1250px) {

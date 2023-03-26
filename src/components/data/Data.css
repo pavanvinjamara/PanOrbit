@@ -2,7 +2,7 @@
     display: flex;
    width: 100%;
    justify-content: center;
-   height: 300px;
+   height: 220px;
    
    
 }
@@ -39,12 +39,12 @@
      
   }  */
   .scroll-div-data{
-    height: 300px;
+    height: 200px;
     overflow-y: scroll;
   }
   
   .info-data{
-       display: flex;
+    display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;

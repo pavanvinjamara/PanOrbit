@@ -26,6 +26,9 @@ function Gallery() {
               </div>}
             </div>
             </div>
+            <div className='flex-container'>
+              <h1>Coming Soon</h1>
+            </div>
 </div>
 <div className='chat-div'><Chat/></div>
 </>

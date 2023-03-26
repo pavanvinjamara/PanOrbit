@@ -2,3 +2,16 @@
     width: 100%;
     padding-left: 53px;
 }
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 90vh;
+}
+
+.flex-container > h1{
+    font-size: 90px;
+    color: #eeeeee;
+}
