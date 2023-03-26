@@ -3,12 +3,14 @@ import { useSelector } from 'react-redux';
 import './Gallery.css'
 import Data from '../data/Data';
 import { Link } from "react-router-dom" 
+import Chat from '../Chat/Chat';
 
 function Gallery() {
   const selectedUser = useSelector(state => state.user.selectedUser);
   const [showPopUP, setShowPopUp] = useState(false);
   return (
-    <div className='gallery'>
+    <>
+       <div className='gallery'>
       <div className='header'>
             <h1 onClick={()=>setShowPopUp(false)}>Gallery</h1>
             <div className='info-1' onClick={()=>setShowPopUp(true)}>
@@ -25,6 +27,9 @@ function Gallery() {
             </div>
             </div>
 </div>
+<div className='chat-div'><Chat/></div>
+</>
+
   )
 }
 

@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Data from '../data/Data';
+import Chat from '../Chat/Chat';
 import './ToDo.css'
 function ToDo() {
   const selectedUser = useSelector(state => state.user.selectedUser);
   const [showPopUP, setShowPopUp] = useState(false);
   return (
-    <div className='todo'>
+    <>
+        <div className='todo'>
         <div className='header'>
             <h1 onClick={()=>setShowPopUp(false)}>Todo</h1>
             <div className='info-1' onClick={()=>setShowPopUp(true)}>
@@ -24,6 +26,9 @@ function ToDo() {
             </div>
             </div>
     </div>
+    <div className='chat-div'><Chat/></div>
+    </>
+
   )
 }
 
